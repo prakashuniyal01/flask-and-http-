@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/menu.js" defer></script> -->
+</head>
+<body>
+    <nav>
+        <a href="./customer.html">
+            <li>customer</li>
+        </a><a href="menu.html">
+            <li>menu</li>
+        </a><a href="./order.html">
+            <li>order</li>
+        </a>
+    </nav>
+
+
+    <h2>Add New Menu Item</h2>
+    <form id="add-menu-form">
+        <input type="text" name="menuName" placeholder="Menu Name" required>
+        <input type="number" name="menuPrice" placeholder="Price" step="0.01" required>
+        <button type="submit">Add Menu Item</button>
+    </form>
+    <h1>Restaurant Menu</h1>
+    <ul id="menu-list"></ul>
+    <h1>Add Customer</h1>
+    <form id="add-customer-form">
+        <input type="text" id="customerName" placeholder="Customer Name" required>
+        <input type="text" id="customerPhoneNumber" placeholder="Phone Number" required>
+        <button type="submit">Add Customer</button>
+    </form>
+    <ul id="customer-list"></ul>
+
+    <h1>Place New Order</h1>
+    <form id="place-order-form">
+        <input type="number" name="customerId" placeholder="Customer ID" required>
+        <input type="number" name="itemId" placeholder="Item ID" required>
+        <input type="number" name="quantity" placeholder="Quantity" required>
+        <input type="date" name="orderDate" required>
+        <button type="submit">Place Order</button>
+    </form>
+
+    <h2>Order History</h2>
+    <ul id="order-list"></ul>
+    <!-- <script src="js/api.js" defer></script> -->
+    <script src="js/order.js" defer></script>
+
+    <script src="js/customer.js"></script>
+    <script src="js/api.js" defer></script>
+<script src="js/menu.js" defer></script>
+
+</body>
+</html>

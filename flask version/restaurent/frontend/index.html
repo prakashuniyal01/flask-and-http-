@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Restaurant Order Management</h1>
+
+    <!-- Add New Menu Item Form -->
+    <div>
+        <h2>Add Menu Item</h2>
+        <form id="menuForm">
+            <label for="name">Item Name:</label>
+            <input type="text" id="name" required>
+            <label for="price">Price:</label>
+            <input type="number" step="0.01" id="price" required>
+            <button type="submit">Add Item</button>
+        </form>
+    </div>
+
+    <h2>Menu Items</h2>
+    <ul id="menuList"></ul>  <!-- List to display menu items -->
+
+    <!-- Add New Customer Form -->
+    <div>
+        <h2>Add Customer</h2>
+        <form id="customerForm">
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" required>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" required>
+            <button type="submit">Add Customer</button>
+        </form>
+    </div>
+
+    <h2>Customer List</h2>
+    <ul id="customerList"></ul>  <!-- List to display customers -->
+
+    <!-- Place New Order Form -->
+    <div>
+        <h2>Place Order</h2>
+        <form id="orderForm">
+            <label for="customerId">Customer ID:</label>
+            <input type="number" id="customerId" required>
+            <label for="itemId">Item ID:</label>
+            <input type="number" id="itemId" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>View Order History</h2>
+        <form id="orderHistoryForm">
+            <label for="orderCustomerId">Customer ID:</label>
+            <input type="number" id="orderCustomerId" required>
+            <button type="submit">Get Order History</button>
+        </form>
+    </div>
+    
+    <h2>Order History</h2>
+    <ul id="orderList"></ul> <!-- List to display order history -->
+
+    <script src="script.js"></script>
+</body>
+</html>

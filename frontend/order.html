@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <h1>Place New Order</h1>
+    <form id="place-order-form">
+        <input type="number" name="customerId" placeholder="Customer ID" required>
+        <input type="number" name="itemId" placeholder="Item ID" required>
+        <input type="number" name="quantity" placeholder="Quantity" required>
+        <input type="date" name="orderDate" required>
+        <button type="submit">Place Order</button>
+    </form>
+
+    <h2>Order History</h2>
+    <ul id="order-list"></ul>
+    <!-- <script src="js/api.js" defer></script> -->
+    <script src="js/order.js" defer></script>
+</body>
+</html>

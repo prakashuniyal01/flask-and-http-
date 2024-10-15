@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+
+</head>
+<body>
+
+
+    <h2>Add New Menu Item</h2>
+    <form id="add-menu-form">
+        <input type="text" name="menuName" placeholder="Menu Name" required>
+        <input type="number" name="menuPrice" placeholder="Price" step="0.01" required>
+        <button type="submit">Add Menu Item</button>
+    </form>
+    <h1>Restaurant Menu</h1>
+    
+    <ul id="menu-list"></ul>
+    <script src="js/api.js" defer></script>
+<script src="js/menu.js" defer></script>
+</body>
+</html>
